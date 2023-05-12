@@ -27,8 +27,9 @@ class MapScreenState extends State<ProfileDrawer>
           'Profile',
           style: Theme.of(context).textTheme.titleLarge,
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
         elevation: 0.0,
+
         leading: IconButton(
             onPressed: () {
               Navigator.push(
@@ -71,12 +72,12 @@ class MapScreenState extends State<ProfileDrawer>
                                 )),
                           ],
                         ),
-                        Padding(
+                        const Padding(
                             padding:
-                                const EdgeInsets.only(top: 90.0, right: 100.0),
+                                EdgeInsets.only(top: 90.0, right: 100.0),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: const <Widget>[
+                              children: <Widget>[
                                 CircleAvatar(
                                   backgroundColor: Colors.red,
                                   radius: 25.0,
@@ -107,10 +108,10 @@ class MapScreenState extends State<ProfileDrawer>
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               mainAxisSize: MainAxisSize.max,
                               children: <Widget>[
-                                Column(
+                                const Column(
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   mainAxisSize: MainAxisSize.min,
-                                  children: const <Widget>[
+                                  children: <Widget>[
                                     Text(
                                       'Parsonal Information',
                                       style: TextStyle(
